@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Crop Tool</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Image Crop Tool</h1>
+      <input type="file" id="imageInput" accept="image/*" />
+      <div id="imageContainer">
+        <img id="image" src="" alt="Your Image" />
+        <div id="selection"></div>
+      </div>
+      <div id="coordinates">
+        <p id="topLeft"></p>
+        <p id="topRight"></p>
+        <p id="bottomLeft"></p>
+        <p id="bottomRight"></p>
+        <p id="rectCoords"></p>
+        <button id="resetButton">Reset</button>
+        <button id="cropButton" style="display: none;">Crop</button>
+      </div>
+      <div id="croppedContainer">
+        <h2>Cropped Image</h2>
+        <img id="croppedImage" src="" alt="Cropped Image" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
