@@ -69,7 +69,7 @@ imageContainer.addEventListener("mouseup", function () {
     ).textContent = `Bottom-Right: (${bottomRightX}, ${bottomRightY})`;
     document.getElementById(
       "rectCoords"
-    ).textContent = `X: ${x}, Y: ${y}, Width: ${width}, Height: ${height} => Array: ["${x}", "${y}", "${width}", "${height}"]`;
+    ).textContent = `X: ${x}, Y: ${y}, Width: ${width}, Height: ${height} => Array: [${x}, ${y}, ${width}, ${height}]`;
 
     selection.style.display = "none";
     document.getElementById("cropButton").click();
